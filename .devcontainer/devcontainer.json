@@ -18,12 +18,14 @@
 			},
 			"extensions": [
 				"vscjava.vscode-java-pack",
+				"vscjava.vscode-maven",
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-java-debug",
 				"GitHub.github-vscode-theme"
 			]
 		}
 	},
+	"containerUser": "vscode",
 	"remoteUser": "vscode",
 	"forwardPorts": [
 		6080
@@ -36,7 +38,11 @@
 	"runArgs": [
 		"--shm-size=1g"
 	],
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc" //Set Terminal Prompt to $
-	// "postCreateCommand": "sudo sh .devcontainer/startup.sh"
+	//Set Terminal Prompt to $
+	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+	"postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh",
+	"mounts": [
+		"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+	]
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
