@@ -7,7 +7,8 @@
 			"installMaven": "false",
 			"mavenVersion": "3.8.6",
 			"installGradle": "false"
-		}
+		},
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
@@ -17,11 +18,24 @@
 			},
 			"extensions": [
 				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-java-debug",
 				"GitHub.github-vscode-theme"
 			]
 		}
 	},
 	"remoteUser": "vscode",
+	"forwardPorts": [
+		6080
+	],
+	"portsAttributes": {
+		"6080": {
+			"label": "desktop"
+		}
+	},
+	"runArgs": [
+		"--shm-size=1g"
+	],
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc" //Set Terminal Prompt to $
 	// "postCreateCommand": "sudo sh .devcontainer/startup.sh"
 }
