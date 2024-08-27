@@ -39,7 +39,7 @@
 		"--shm-size=1g"
 	],
 	//Set Terminal Prompt to $
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+	"onCreateCommand": "echo '\nPS1=\"$ \"' >> ~/.bashrc",
 	"postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh",
 	"mounts": [
 		"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
