@@ -16,6 +16,8 @@ public class ExplicitWait extends Main {
     WebElement textbox = driver.findElement(By.id("revealed"));
     driver.findElement(By.id("reveal")).click();
 
+    var wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    wait.until(ExpectedConditions.visibilityOf(textbox));
 
     driver.quit();
   }
