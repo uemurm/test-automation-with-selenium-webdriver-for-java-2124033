@@ -8,6 +8,7 @@ import java.util.List;
 
 public class FindingMultipleElements extends Main{
 
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     driver.get("https://www.selenium.dev/selenium/web/formPage.html");
 
