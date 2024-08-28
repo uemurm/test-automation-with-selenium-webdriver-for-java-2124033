@@ -14,7 +14,14 @@ public class Challenge_WaitForAppearance extends Main {
 
     driver.get("https://www.selenium.dev/selenium/web/dynamicallyModifiedPage.html");
 
+    WebElement elementToRemove = driver.findElement(By.id("element-to-remove"));
+    driver.findElement(By.id("buttonDelete")).click();
 
+    var wait = new WebDriverWait(driver, Duration.ofMillis(5001));
+    boolean removed = wait.until(
+        ExpectedConditions.invisibilityOf(elementToRemove));
+
+    System.out.println(removed);
 
     driver.quit();
   }
