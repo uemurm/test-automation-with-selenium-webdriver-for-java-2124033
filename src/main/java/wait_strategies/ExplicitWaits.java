@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import setup.Main;
 
-public class ExplicitWait extends Main {
+public class ExplicitWaits extends Main {
 
   public static void main(String[] args) {
     driver.get("https://www.selenium.dev/selenium/web/dynamic.html");
