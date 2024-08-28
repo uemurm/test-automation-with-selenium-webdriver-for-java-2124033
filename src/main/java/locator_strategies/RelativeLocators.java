@@ -7,7 +7,8 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 import setup.Main;
 
 public class RelativeLocators extends Main {
-
+  
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     driver.get("https://www.selenium.dev/selenium/web/formPage.html");
 

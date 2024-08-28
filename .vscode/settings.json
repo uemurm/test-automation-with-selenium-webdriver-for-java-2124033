@@ -21,6 +21,6 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "java.server.launchMode": "Standard",
-  "java.compile.nullAnalysis": "disabled",
+  "java.compile.nullAnalysis.mode": "disabled",
   "java.configuration.updateBuildConfiguration": "interactive"
 }
