@@ -4,7 +4,7 @@ import setup.Main;
 import java.time.Duration;
 import org.openqa.selenium.By;
 
-public class ImplicitWait extends Main {
+public class ImplicitWaits extends Main {
 
   public static void main(String[] args) {
     
