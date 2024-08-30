@@ -8,4 +8,4 @@ Thumbs.db
 
 # Ignore dirs
 /target/
-/resources/*.png
+/screenshots/*.png

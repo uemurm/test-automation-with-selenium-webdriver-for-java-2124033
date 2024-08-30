@@ -15,6 +15,7 @@ public class Main {
 
     var options = new ChromeOptions();
     options.addArguments("--no-sandbox");
+    
     driver = new ChromeDriver(options);
   }
 
