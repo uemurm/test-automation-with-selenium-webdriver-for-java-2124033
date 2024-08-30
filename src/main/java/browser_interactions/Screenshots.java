@@ -11,20 +11,31 @@ import org.openqa.selenium.bidi.browsingcontext.BrowsingContext;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 public class Screenshots extends Main {
-  
+
   public static void main(String[] args) {
     driver.get("https://www.selenium.dev/selenium/web/web-form.html");
-    
-    
+
+    var browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
 
     // FULL PAGE
-
+    String fullScreenshot = browsingContext.captureScreenshot();
+    saveScreenshot(fullScreenshot, "full_screenshot.png");
 
     // ELEMENT
-
+    WebElement colorPicker = driver.findElement(By.name("my-colors"));
+    String internalElementId = ((RemoteWebElement) colorPicker).getId();
+    String elementScreenshot = browsingContext.captureElementScreenshot(internalElementId);
+    saveScreenshot(elementScreenshot, "element_screenshot.png");
 
     // VIEWPORT
-
+    driver.findElement(By.name("my-date")).click();
+    var datePicker = driver.findElement(By.className("datepicker")).getRect();
+    String viewportScreenshot = browsingContext.captureBoxScreenshot(
+        datePicker.getX(),
+        datePicker.getY(),
+        datePicker.getWidth(),
+        datePicker.getHeight());
+    saveScreenshot(viewportScreenshot, "viewport_screenshot.png");
 
     driver.quit();
   }
