@@ -15,7 +15,7 @@ public class Main {
 
     var options = new ChromeOptions();
     options.addArguments("--no-sandbox");
-    options.enableBiDi();
+    //options.enableBiDi(); //needed for screenshots
     driver = new ChromeDriver(options);
   }
 
