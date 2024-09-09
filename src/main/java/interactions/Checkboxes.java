@@ -12,10 +12,11 @@ public class Checkboxes extends Main {
 
     WebElement checkbox = driver.findElement(By.id("my-check-1"));
     boolean isSelected = checkbox.isSelected();
+
     if (!isSelected) {
       checkbox.click();
     }
-    
+
     driver.quit();
   }
 }
