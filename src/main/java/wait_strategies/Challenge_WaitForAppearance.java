@@ -14,7 +14,7 @@ public class Challenge_WaitForAppearance extends Main {
 
     driver.get("https://www.selenium.dev/selenium/web/dynamicallyModifiedPage.html");
 
-
+    // TODO: click button and wait for element to become invisible
 
     driver.quit();
   }
