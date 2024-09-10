@@ -2,10 +2,10 @@ package interactions;
 
 import setup.Main;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class DropdownMenus extends Main {
@@ -34,5 +34,4 @@ public class DropdownMenus extends Main {
 
     driver.quit();
   }
-  
 }
