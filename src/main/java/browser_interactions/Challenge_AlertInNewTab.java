@@ -2,10 +2,7 @@ package browser_interactions;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import setup.Main;
 
 public class Challenge_AlertInNewTab extends Main {
@@ -24,9 +21,6 @@ public class Challenge_AlertInNewTab extends Main {
         break;
       }
     }
-
-    new WebDriverWait(driver, Duration.ofSeconds(2))
-        .until(ExpectedConditions.alertIsPresent());
 
     Alert alert = driver.switchTo().alert();
     System.out.println(alert.getText());
