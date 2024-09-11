@@ -14,7 +14,6 @@ public class Screenshots extends Main {
 
   public static void main(String[] args) {
     driver.get("https://www.selenium.dev/selenium/web/web-form.html");
-
     var browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
 
     // FULL PAGE
@@ -35,6 +34,7 @@ public class Screenshots extends Main {
         datePicker.getY(),
         datePicker.getWidth(),
         datePicker.getHeight());
+
     saveScreenshot(viewportScreenshot, "viewport_screenshot.png");
 
     driver.quit();
