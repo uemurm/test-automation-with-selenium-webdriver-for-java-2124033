@@ -12,9 +12,11 @@ public class Scroll extends Main {
     // Scroll to element
     driver.get("https://www.selenium.dev/selenium/web/scroll.html");
 
+    
 
     //Scroll by amount
     driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/page_with_tall_frame.html");
+
 
 
     driver.quit();
