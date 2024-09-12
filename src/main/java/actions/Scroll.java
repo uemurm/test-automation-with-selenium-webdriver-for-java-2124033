@@ -12,7 +12,6 @@ public class Scroll extends Main {
     // Scroll to element
     driver.get("https://www.selenium.dev/selenium/web/scroll.html");
     var line9 = driver.findElement(By.id("line9"));
-    System.out.println(line9.isDisplayed());
     new Actions(driver).scrollToElement(line9).perform();
 
     // Scroll by amount
