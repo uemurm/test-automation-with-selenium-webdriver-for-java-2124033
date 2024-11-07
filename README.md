@@ -31,7 +31,7 @@ To resolve this issue:
 
 Angie Jones
 
-Java Champion, Senior Director, and Master Inventor
+Test Automation Architect, Java Champion, and Master Inventor
                             
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/angie-jones?u=104).
