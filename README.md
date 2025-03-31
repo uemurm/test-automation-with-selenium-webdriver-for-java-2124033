@@ -1,4 +1,4 @@
-# Test Automation with Selenium WebDriver for myself
+# Test Automation with Selenium WebDriver for Myself
 
 This is the repository for the LinkedIn Learning course `Test Automation with Selenium WebDriver for Java`. The full course is available from [LinkedIn Learning][lil-course-url].
 
