@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverSetup {
-  public static WebDriver initialiseDriver() {
+  public static WebDriver initializeDriver() {
     chromedriver().setup();
     var options = new ChromeOptions();
     options.addArguments("--no-sandbox");
