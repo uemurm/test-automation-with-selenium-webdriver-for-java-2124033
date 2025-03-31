@@ -50,7 +50,7 @@ class ExplicitWaits {
 }
 
 class FluentWaits {
-  static protected WebDriver driver = WebDriverSetup.initialiseDriver();
+  static protected WebDriver driver = WebDriverSetup.initializeDriver();
 
   public static void main(String[] args) {
     driver.get("https://selenium.dev/selenium/web/dynamic.html");
@@ -69,7 +69,7 @@ class FluentWaits {
 }
 
 class Challenge {
-  static protected WebDriver driver = WebDriverSetup.initialiseDriver();
+  static protected WebDriver driver = WebDriverSetup.initializeDriver();
 
   public static void main(String[] args) {
     driver.get("https://selenium.dev/selenium/web/dynamicallyModifiedPage.html");
