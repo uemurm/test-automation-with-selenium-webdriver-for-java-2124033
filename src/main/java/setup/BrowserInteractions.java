@@ -7,8 +7,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.bidi.browsingcontext.BrowsingContext;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+final class New {
+  static protected WebDriver driver = WebDriverSetup.initializeDriver();
+
+  public static void main(String[] args) {
+    String url = "https://selenium.dev/selenium/web/window_switching_tests/page_with_frame.html";
+    driver.get(url);
+
+    driver.quit();
+  }
+}
 
 final class Cookies {
   static protected WebDriver driver = WebDriverSetup.initializeDriver();
@@ -29,17 +41,6 @@ final class Cookies {
 
     driver.manage().deleteCookieNamed("theme");
     System.out.println(driver.manage().getCookies().size());
-
-    driver.quit();
-  }
-}
-
-final class New {
-  static protected WebDriver driver = WebDriverSetup.initializeDriver();
-
-  public static void main(String[] args) {
-    String url = "https://selenium.dev/selenium/web/window_switching_tests/page_with_frame.html";
-    driver.get(url);
 
     driver.quit();
   }
