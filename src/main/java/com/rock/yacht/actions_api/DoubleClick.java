@@ -1,7 +1,11 @@
 package com.rock.yacht.actions_api;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+// import org.openqa.selenium.bidi.browsingcontext.BrowsingContext;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 import setup.Main;
 
