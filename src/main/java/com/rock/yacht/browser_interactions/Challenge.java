@@ -1,10 +1,6 @@
 package com.rock.yacht.browser_interactions;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Rectangle;
-import org.openqa.selenium.WebElement;
-// import org.openqa.selenium.bidi.browsingcontext.BrowsingContext;
-import org.openqa.selenium.remote.RemoteWebElement;
 
 import setup.Main;
 
