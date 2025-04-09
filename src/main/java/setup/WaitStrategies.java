@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 class ImplicitWaits {
   static protected WebDriver driver = WebDriverSetup.initializeDriver();
@@ -27,7 +29,8 @@ class ImplicitWaits {
 }
 
 class ExplicitWaits {
-  static protected WebDriver driver = WebDriverSetup.initializeDriver();
+    private static final Logger log = LoggerFactory.getLogger(ExplicitWaits.class);
+    static protected WebDriver driver = WebDriverSetup.initializeDriver();
 
   public static void main(String[] args) {
     driver.get("https://selenium.dev/selenium/web/dynamic.html");
@@ -43,6 +46,7 @@ class ExplicitWaits {
     try {
       Thread.sleep(3000);
     } catch (Exception e) {
+      log.error("e: ", e);
     }
 
     driver.quit();
@@ -68,7 +72,7 @@ class FluentWaits {
   }
 }
 
-class Challenge {
+class ChallengeWaits {
   static protected WebDriver driver = WebDriverSetup.initializeDriver();
 
   public static void main(String[] args) {
